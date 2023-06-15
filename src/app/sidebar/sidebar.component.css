@@ -1,0 +1,12 @@
+.createTeam{
+    margin-top: 1rem;
+    min-height: 30vh;
+}
+
+.imgSmall {
+    height: 70px;
+}
+
+.selectedPlayers {
+    transition: .5s;
+}

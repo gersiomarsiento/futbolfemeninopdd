@@ -1,0 +1,17 @@
+<div class="createTeam">
+    <h2>Armá tu equipo</h2>
+    <!-- <ul class="team">
+        <li>Arq</li>
+        <li>Def</li>
+        <li>Med</li>
+        <li>Med</li>
+        <li>Del</li>
+    </ul> -->
+    <ul class="selectedTeam">
+        <li class="selectedPlayers" *ngFor="let player of myTeam">
+            <img class="imgSmall" [src]="player.data.img" alt="">
+            <br>
+            {{player.data.name}}
+        </li>
+    </ul>
+</div>

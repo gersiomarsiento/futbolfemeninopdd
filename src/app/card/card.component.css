@@ -1,0 +1,30 @@
+.card {
+    background: var(--color5);
+}
+
+.card, .favorite {
+    border: 2px solid var(--color4);
+    border-radius: 2%;
+    padding: 1rem;
+}
+
+.name, .posicion, .favorite {
+    color: var(--color1);
+    padding: 1rem;
+}
+
+.image {
+    max-width: 100%;
+    border-radius: 2%;
+}
+
+.favorite {
+    background: var(--color4);
+}
+
+.favorite:hover {
+    background: var(--color1);
+    transform: scale(1.2);
+    color: var(--color4);
+    transition: 0.2s;
+}

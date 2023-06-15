@@ -1,0 +1,13 @@
+<app-header></app-header>
+<app-banner></app-banner>
+
+<h2>Primer Equipo de Fútbol Femenino de Punta del Diablo</h2>
+
+<!-- Jugadoras -->
+<div class="grid">
+  <app-card [routerLink]="['/','players',playerDetails?.id]" [dataEntry]="playerDetails" 
+  *ngFor="let playerDetails of playerList"></app-card>
+</div>
+
+<!-- Armá tu equipo -->
+<app-sidebar></app-sidebar>

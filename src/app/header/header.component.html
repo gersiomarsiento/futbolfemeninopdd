@@ -1,0 +1,33 @@
+<!-- <div class="header">
+    <ul class="menu">
+        <li><a href="/"> <img src="assets\img\laola.png" alt="" class="logo"></a></li>
+        <li><a href="/equipo">Equipo</a></li>
+        <li><a href="/liga">Liga</a></li>
+        <li><a href="/sumate">Sumate a La Ola</a></li>
+        <li><a href="/comments">Comentarios</a></li>
+    </ul>
+</div> -->
+
+
+<!-- Navbar -->
+<div class="header">
+    <!-- Logo -->
+    <a href="/" class="club-logo" [ngClass]="{'position-init':isLogoMoved}"><img src="assets\img\laola.png" alt=""></a>
+
+    <a class="navbar-toggle" (click)="showNav()">
+        <span class="bar" id="bar-1" [ngClass]="{'rotate45':isBar1Rotated}"></span>
+        <span class="bar" id="bar-2" [ngClass]="{'display-none':isBar2Invisible}"></span>
+        <span class="bar" id="bar-3" [ngClass]="{'rotate135':isBar3Rotated}"></span>
+    </a>
+</div>
+<nav class="navbar-container" [ngClass]="{'show':isNavbarVisible}">
+    <ul class="nav-list">
+        <a href="">LA OLA</a>
+        <a href="/equipo">PLANTEL</a>
+        <a href="/liga">LA LIGA</a>
+        <a href="/sumate">SUMATE</a>
+        <a href="">CONTACTO</a>
+        <a href="">APOYANOS</a>
+        <!-- <a href="/comments">COMENTARIOS</a> -->
+    </ul>
+</nav>
