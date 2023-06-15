@@ -1,0 +1,10 @@
+<div class="card">
+    <img [src]="dataEntry?.img" alt="" class="image">
+    <div class="wrapper-text">
+        <div class="name">{{dataEntry?.name}}</div>
+        <div class="posicion">{{dataEntry?.posicion}}</div>
+    </div>
+    <div>
+        <button class="favorite" (click)="contratarJugadora($event)">Agregar a mi equipo</button>
+    </div>
+</div>

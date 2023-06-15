@@ -1,0 +1,22 @@
+<app-header></app-header>
+<h1>¡Dejá tu mensaje de aliento para nuestras jugadoras!</h1>
+
+<h4>Comentarios:</h4>
+
+<div *ngFor="let comment of comments" style="padding: 16px;">
+    <h4>{{ comment.id }}. {{ comment.name }}</h4> 
+    <div>{{ comment.text }}</div>
+</div>
+
+
+<form [formGroup]="form" (submit)="enviarComentario()">
+    <div class="form-group">
+        <h4>Comentar</h4>
+        <label for="name">Nombre</label>
+        <input formControlName="name" type="text">
+        <br>
+        <textarea formControlName="textAreaComentario" name="" id="comments" cols="50" rows="20"></textarea>
+        <br>
+        <button class="button">Enviar</button>
+    </div>
+</form>

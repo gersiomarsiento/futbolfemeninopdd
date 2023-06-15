@@ -1,0 +1,100 @@
+{
+  "comments": [
+    {
+      "text": "CAS",
+      "name": "Cas",
+      "id": 1
+    },
+    {
+      "text": "Muy bueno\n",
+      "name": "Mario",
+      "id": 2
+    }
+  ],
+  "players": [
+    {
+      "id": 1,
+      "title": "Player 1",
+      "name": "Maeva Chapus",
+      "posicion": "Delantera",
+      "img": "assets/img/mae.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Player 2",
+      "name": "Triana ",
+      "posicion": "Arquera",
+      "img": "assets/img/triana.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Player 3",
+      "name": "Dani",
+      "posicion": "Defensora",
+      "img": "assets/img/dani.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Player 4",
+      "name": "Romina Aguirre",
+      "posicion": "Arquera",
+      "img": "assets/img/foot.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Player 5",
+      "name": "Paz",
+      "posicion": "Mediocampista",
+      "img": "assets/img/foot.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Player 6",
+      "name": "Gise",
+      "posicion": "Delantera",
+      "img": "assets/img/foot.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Player 7",
+      "name": "Gala",
+      "posicion": "Defensa",
+      "img": "assets/img/foot.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Player 8",
+      "name": "Alejandra Lupiz",
+      "posicion": "Defensora",
+      "img": "assets/img/foot.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Player 9",
+      "name": "Candelaria Belaustegui",
+      "posicion": "Defensora",
+      "img": "assets/img/foot.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Player 10",
+      "name": "Aris Bentancour",
+      "posicion": "Mediocampista",
+      "img": "assets/img/foot.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Player 11",
+      "name": "Flor",
+      "posicion": "Delantera",
+      "img": "assets/img/flor.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Player 11",
+      "name": "Yose",
+      "posicion": "Mediocamista",
+      "img": "assets/img/foot.jpg"
+    }
+  ]
+}
