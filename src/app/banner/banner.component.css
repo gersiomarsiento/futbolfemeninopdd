@@ -11,3 +11,6 @@
                 inset 0 0 12rem 4rem hsla(186, 97%, 12%, 1);
 }
 
+.banner img {
+    height: 18rem;
+}
