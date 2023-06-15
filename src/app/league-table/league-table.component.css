@@ -43,7 +43,7 @@ td span img {
 }
 
 .result-card-wrapper * {
-    color: var(--color3);
+    color: var(--color1);
     padding: .3rem;
 }
 .result-card-wrapper {
