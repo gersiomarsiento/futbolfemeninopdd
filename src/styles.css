@@ -42,7 +42,12 @@ html * {
 body {
     /* background: linear-gradient(90deg, var(--color2) 0%, var(--color4) 100%); */
     background-image: url("assets\img\gradient.png");
+    background-size: cover;
 }
+
+.overflow-hidden {
+    overflow: hidden;
+  }
 
 h1 {
     padding-top: 16px;

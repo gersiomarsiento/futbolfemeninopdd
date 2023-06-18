@@ -1,10 +1,11 @@
 /* LEAGUE TABLE */
 .table-container {
-    margin: 3vh;
     background-color: var(--color5);
+    width: 90%;
+    max-width: 700px;
     text-align: center;
     border-radius: 1rem;
-    box-shadow: 0px 0px 120px 4px;
+    /* box-shadow: 0px 0px 120px 4px; */
 }
 
 .table-container h2 {
@@ -17,6 +18,13 @@
     border-collapse: collapse;
     background-color: var(--color1);
     font-size: .9rem;
+}
+
+tr:nth-of-type(2n+1) {
+    background: rgb(186, 195, 202);
+}
+thead tr {
+    background: var(--color1);
 }
 
 tr>td:nth-child(2){
@@ -55,7 +63,7 @@ td span img {
     min-height: 10vh;
     width: 49%;
     align-items: center;
-    box-shadow: 0 1rem 1rem 1px black;
+    /* box-shadow: 0 1rem 1rem 1px black; */
     padding-top: 1rem;
     border-radius: 0 0 1rem 1rem;
 }
@@ -83,4 +91,12 @@ td span img {
 
     font-weight: 800;
     text-align: -webkit-center;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    tr {
+        height: 3rem;
+    }
 }

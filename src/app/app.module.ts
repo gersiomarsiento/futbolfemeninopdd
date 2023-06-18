@@ -17,6 +17,8 @@ import { EquipoComponent } from './equipo/equipo.component';
 import { LigaComponent } from './liga/liga.component';
 import { FooterComponent } from './footer/footer.component';
 import { LeagueTableComponent } from './league-table/league-table.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { CarouselModule } from './carousel/carousel.module';
 
 
 @NgModule({
@@ -33,13 +35,15 @@ import { LeagueTableComponent } from './league-table/league-table.component';
     EquipoComponent,
     LigaComponent,
     FooterComponent,
-    LeagueTableComponent
+    LeagueTableComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

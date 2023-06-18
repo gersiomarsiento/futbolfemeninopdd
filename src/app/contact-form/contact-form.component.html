@@ -1,0 +1,24 @@
+<div class="container" id="formContainer" >
+    <form #form id="form" [formGroup]="contactForm">
+        <div class="field">
+          <label for="from_name">Nombre</label>
+          <input type="text" name="from_name" id="from_name" formControlName="name">
+        </div>
+        <div class="field">
+          <label for="message">Mensaje</label>
+          <input type="text" name="message" id="message" formControlName="message">
+        </div>
+        <div class="field">
+          <label for="reply_to">Correo electrónico</label>
+          <input type="text" name="reply_to" id="reply_to" formControlName="mail">
+        </div>
+    
+        <input type="submit" #sendButton id="sendButton" value="Enviar">
+    </form>
+</div>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+</script>
+  

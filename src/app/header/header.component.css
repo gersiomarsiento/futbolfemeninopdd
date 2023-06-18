@@ -1,13 +1,14 @@
 .header {
     width: 100%;
     background-color: var(--color5);
-    border-bottom: solid 1px var(--color3);
+    /* background-color: rgba(26, 63, 147,.5); */
+    /* position: fixed; */
+    position: sticky;
     /* IMPORTED */
     display: flex;
     align-items: center;
     height: 10vh;
-    z-index: 1;
-    position: sticky;
+    z-index: 2;
     top: 0;
     transition: .3s;
 }
@@ -58,9 +59,6 @@
     display: none;
   }
 
-  .overflow-hidden {
-    overflow: hidden;
-  }
   
   .rotate45{
     transform: rotate(45deg) translateY(6px);
@@ -82,6 +80,7 @@
     visibility: visible;
     opacity: 1;
     transition: .5s;
+    z-index: 2;
     overflow: hidden;
     position: fixed;
     background: linear-gradient(to right, var(--color5), var(--color4) 50%, var(--color5) 100%);
@@ -107,9 +106,9 @@
 .nav-list > a {
     color: var(--color1);
     text-decoration: none;
-    width: 20vw;
     border-radius: 10px;
     font-weight: 700;
+    padding: 0 2rem;
 }
 
 .nav-list > a:hover {

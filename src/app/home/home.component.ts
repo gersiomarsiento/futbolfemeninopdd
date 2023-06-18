@@ -6,4 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 
-export class HomeComponent{}
+export class HomeComponent{
+  
+  images = [
+    {
+      imageSrc: "./assets/img/mae.jpg",
+      imageAlt: "Maeva"
+    },
+    {
+      imageSrc: "./assets/img/flor.jpg",
+      imageAlt: "Maeva"
+    },
+    {
+      imageSrc: "./assets/img/dani.jpg",
+      imageAlt: "Maeva"
+    },
+  ]
+}

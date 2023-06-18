@@ -3,11 +3,11 @@ h2 {
     font-weight: 800;
 }
 
-#ola-team {
-    max-width: 100%;
-}
-
 #intro {
     width: 80vw;
     margin: 10rem auto;
+}
+
+.table-component {
+    text-align: -webkit-center;
 }
