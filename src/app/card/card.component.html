@@ -1,10 +1,14 @@
 <div class="card">
     <img [src]="dataEntry?.img" alt="" class="image">
     <div class="wrapper-text">
-        <div class="name">{{dataEntry?.name}}</div>
-        <div class="posicion">{{dataEntry?.posicion}}</div>
+        <div class="player-detail name">Nombre: {{dataEntry?.name}}</div>
+        <div class="player-detail posicion">Posición: {{dataEntry?.posicion}}</div>
+        <div class="player-detail altura">Altura: {{dataEntry?.altura}}</div>
+        <div class="player-detail origen">Lugar de origen: {{dataEntry?.origen}}</div>
+        <div class="player-detail nacimiento">Fecha de nacimiento: {{dataEntry?.nacimiento}}</div>
+        <div class="player-detail joined">En el club desde: {{dataEntry?.joined}}</div>
     </div>
-    <div>
+    <!-- <div>
         <button class="favorite" (click)="contratarJugadora($event)">Agregar a mi equipo</button>
-    </div>
+    </div> -->
 </div>

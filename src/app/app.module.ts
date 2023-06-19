@@ -19,6 +19,9 @@ import { FooterComponent } from './footer/footer.component';
 import { LeagueTableComponent } from './league-table/league-table.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { CarouselModule } from './carousel/carousel.module';
+import { ContactoComponent } from './contacto/contacto.component';
+import { ApoyanosComponent } from './apoyanos/apoyanos.component';
+import { UnderConstructionComponent } from './under-construction/under-construction.component';
 
 
 @NgModule({
@@ -36,7 +39,10 @@ import { CarouselModule } from './carousel/carousel.module';
     LigaComponent,
     FooterComponent,
     LeagueTableComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    ContactoComponent,
+    ApoyanosComponent,
+    UnderConstructionComponent
   ],
   imports: [
     BrowserModule,

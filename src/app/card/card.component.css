@@ -8,7 +8,7 @@
     padding: 1rem;
 }
 
-.name, .posicion, .favorite {
+.player-detail {
     color: var(--color1);
     padding: 1rem;
 }

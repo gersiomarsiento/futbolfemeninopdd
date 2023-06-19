@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import emailjs from 'emailjs-com';
 
 @Component({
@@ -13,9 +13,9 @@ export class ContactFormComponent {
   @ViewChild('form') form!: ElementRef;
 
   contactForm = new FormGroup({
-    name: new FormControl(''),
-    message: new FormControl(''),
-    mail: new FormControl(''),
+    name: new FormControl('', Validators.required),
+    message: new FormControl('', Validators.required),
+    mail: new FormControl('', [Validators.required, Validators.email]),
   });
 
 ngAfterViewInit () {

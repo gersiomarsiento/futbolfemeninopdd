@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RestService } from '../rest.service';
+import { playersList } from './playersList';
 
 @Component({
   selector: 'app-equipo',
@@ -7,19 +7,8 @@ import { RestService } from '../rest.service';
   styleUrls: ['./equipo.component.css']
 })
 export class EquipoComponent implements OnInit{
-  public playerList:any = [];
-
-  constructor (private RestService:RestService){ }
-
-  ngOnInit(): void {
-    this.cargarData()
-  }
-
-  public cargarData() {
-    this.RestService.get('http://localhost:3000/players')
-    .subscribe(res => 
-      this.playerList = res
-    )
+  playerList = playersList
+  ngOnInit(): void { 
   }
 }
 

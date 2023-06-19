@@ -1,19 +1,20 @@
 <div class="container" id="formContainer" >
     <form #form id="form" [formGroup]="contactForm">
+        <h2>¡Escribinos!</h2>
+        <br>
         <div class="field">
           <label for="from_name">Nombre</label>
           <input type="text" name="from_name" id="from_name" formControlName="name">
         </div>
         <div class="field">
-          <label for="message">Mensaje</label>
-          <input type="text" name="message" id="message" formControlName="message">
+          <label for="reply_to">Correo electrónico</label>
+          <input type="email" name="reply_to" id="reply_to" formControlName="mail">
         </div>
         <div class="field">
-          <label for="reply_to">Correo electrónico</label>
-          <input type="text" name="reply_to" id="reply_to" formControlName="mail">
+          <label for="message">Mensaje</label>
+          <textarea type="text" name="message" id="message" formControlName="message" cols="33" rows="10"></textarea>
         </div>
-    
-        <input type="submit" #sendButton id="sendButton" value="Enviar">
+        <input type="submit" #sendButton id="sendButton" value="Enviar" [disabled]="contactForm.invalid" [ngClass]="{ 'disabled-button': contactForm.invalid }">
     </form>
 </div>
 

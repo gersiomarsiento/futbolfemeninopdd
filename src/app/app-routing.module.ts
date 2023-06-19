@@ -7,6 +7,8 @@ import { CommentsComponent } from './comments/comments.component';
 import { SumateComponent } from './sumate/sumate.component';
 import { EquipoComponent } from './equipo/equipo.component';
 import { LigaComponent } from './liga/liga.component';
+import { ContactoComponent } from './contacto/contacto.component';
+import { ApoyanosComponent } from './apoyanos/apoyanos.component';
 
 const routes: Routes = [
   {
@@ -32,6 +34,14 @@ const routes: Routes = [
   {
     path: 'liga',
     component: LigaComponent
+  },
+  {
+    path: 'contacto',
+    component: ContactoComponent
+  },
+  {
+    path: 'apoyanos',
+    component: ApoyanosComponent
   }
 ]
 
