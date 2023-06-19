@@ -3,7 +3,7 @@ import { playersList } from './playersList';
 
 @Component({
   selector: 'app-equipo',
-  templateUrl: './index.html',
+  templateUrl: './equipo.component.html',
   styleUrls: ['./equipo.component.css']
 })
 export class EquipoComponent implements OnInit{
