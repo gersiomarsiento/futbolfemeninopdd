@@ -80,4 +80,24 @@ li {
 
 p {
     color: var(--color1);
+    text-align: left;
 }
+  /* Scrollbar */
+::-webkit-scrollbar {
+    width: .4rem;
+  }
+  /* Track */
+::-webkit-scrollbar-track {
+    background: var(--color4); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--color1); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color3); 
+
+  }

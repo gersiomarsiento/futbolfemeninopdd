@@ -5,8 +5,8 @@ export const playersList = [
         "name": "Maeva Chapus",
         "posicion": "Delantera",
         "altura": "1.68 mts",
-        "img": "assets/img/mae.jpg",
-        "origen": "Marsella, Francia",
+        "img": "assets/img/foot.jpg",
+        "origen": "Marsella (Francia)",
         "nacimiento": "11.07.1994",
         "joined": "2020"
       },
@@ -15,7 +15,7 @@ export const playersList = [
         "title": "Player 2",
         "name": "Triana ",
         "posicion": "Arquera",
-        "img": "assets/img/triana.jpg",
+        "img": "assets/img/foot.jpg",
         "altura": "1.68 mts",
         "origen": "Uruguay",
         "nacimiento": "11.07.1994",
@@ -26,7 +26,7 @@ export const playersList = [
         "title": "Player 3",
         "name": "Dani",
         "posicion": "Defensora",
-        "img": "assets/img/dani.jpg",
+        "img": "assets/img/foot.jpg",
         "altura": "1.68 mts",
         "origen": "Marsella, Francia",
         "nacimiento": "11.07.1994",
@@ -79,24 +79,24 @@ export const playersList = [
       {
         "id": 8,
         "title": "Player 8",
-        "name": "Alejandra Lupiz",
-        "posicion": "Defensora",
+        "name": "Ale Lupiz",
+        "posicion": "Mediocampista",
         "img": "assets/img/foot.jpg",
         "altura": "1.68 mts",
-        "origen": "Marsella, Francia",
-        "nacimiento": "11.07.1994",
-        "joined": "2020"
+        "origen": "Buenos Aires (Argentina)",
+        "nacimiento": "20.02.1985",
+        "joined": "2021"
       },
       {
         "id": 9,
         "title": "Player 9",
         "name": "Candelaria Belaustegui",
-        "posicion": "Defensora",
+        "posicion": "Mediocampista",
         "img": "assets/img/foot.jpg",
-        "altura": "1.68 mts",
-        "origen": "Marsella, Francia",
-        "nacimiento": "11.07.1994",
-        "joined": "2020"
+        "altura": "1.63 mts",
+        "origen": "Azul, Buenos Aires (Argentina)",
+        "nacimiento": "01.07.1985",
+        "joined": "2022"
       },
       {
         "id": 10,

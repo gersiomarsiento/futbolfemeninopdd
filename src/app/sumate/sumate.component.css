@@ -1,0 +1,24 @@
+.sumate-container, h2 {
+    margin: 4rem auto;
+    margin-bottom: 8rem;
+    padding: 1rem;
+}
+
+.sumate-container {
+    max-width: 800px;
+}
+
+a {
+    color: var(--color2);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color3);
+    transition: .2s;
+}
+
+.front-gimnasio, .map-gimnasio {
+    width: 100%;
+    margin: 1rem 0;
+}
