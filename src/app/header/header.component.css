@@ -119,20 +119,33 @@
     transition: .3s;
 }
 
+.club-logo-wide{
+    display: none;
+}
 
 @media only screen and (min-width: 1000px) {
     .header {
         border: none;
+        display: none;
+    }
+    .club-logo-wide{
+        display: block;
+    }
+    #club-logo-wide:hover{
+        background-color: transparent;    
     }
     .navbar-toggle{
-        display: none;
+        display: flex;
     }
     .nav-list {
         position: fixed;
         flex-direction: row;
         background: var(--color5);
-        height: 3%;
+        height: 4rem;
         width: 100%;
+    }
+    .nav-list a{
+        flex: 1 1 0px;
     }
     .navbar-container{
         visibility: visible;
