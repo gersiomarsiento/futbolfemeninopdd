@@ -1,12 +1,13 @@
 /* LEAGUE TABLE */
 .table-container {
-    background-color: var(--color5);
+    background-color: var(--color3);
     width: 90%;
     max-width: 700px;
     text-align: center;
     border-radius: 1rem;
-    margin: 3rem auto;
+    margin: 0rem auto 1rem;
     /* box-shadow: 0px 0px 120px 4px; */
+
 }
 
 .table-container h2 {
@@ -28,6 +29,11 @@ thead tr {
     background: var(--color1);
 }
 
+.serie-header-content th{
+    background: var(--color5);
+    color: var(--color1);
+}
+
 tr>td:nth-child(2){
     text-align: left;
     /* padding-left: .5rem; */
@@ -38,27 +44,78 @@ td, th, tr {
     padding: .4rem;
 }
 
-td span img {
+td img {
     height: 1.8rem;
     vertical-align: middle;
     margin-right: .2rem;
 }
 
+.team-name-logo-centered, .pts, .fixture-result {
+    text-align: center !important;
+    text-align: -webkit-center !important;
+    font-weight: 800;
+}
+
+/* FIXTURE */
+.matchday-header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.matchday-header-container span{
+    color: var(--color1);
+    font-size: 1.2rem;
+}
+.arrow{
+    background: none;
+    border: none;
+    font: inherit;
+}
+.arrow[disabled]{
+    opacity: 0;
+}
+
+  
+  .pagination {
+    padding: .2rem;
+    background: var(--color5);
+    border-radius: 0 0 1rem 1rem;
+  }
+  
+  .page-link {
+    border: none;
+    color: var(--color1);
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px;
+    outline: none;
+  }
+  
+  .page-link.active {
+    font-weight: bold;
+    background: var(--color1);
+    color: var(--color3);
+    border-radius: 1rem;
+  }
+
 /* RESULTS AND NEXT MATCH */
 .results-container {
     display: flex;
     justify-content: space-between;
-    /* margin-top: 3vh; */
+    max-width: 700px;
+    margin-bottom: 3vh;
 }
 
 .result-card-wrapper * {
     color: var(--color1);
     padding: .3rem;
 }
+
 .result-card-wrapper {
     display: flex;
     flex-direction: column;
-    background-color: var(--color5);
+    background-color: var(--color3);
     color: var(--color5);
     /* border-radius: 2rem; */
     min-height: 10vh;
@@ -66,14 +123,12 @@ td span img {
     align-items: center;
     /* box-shadow: 0 1rem 1rem 1px black; */
     padding-top: 1rem;
-    border-radius: 0 0 1rem 1rem;
+    border-radius: 1rem;
 }
-
 
 .result-card{
     display: flex;
     flex-direction: row;
-    width: 100%;
     margin-top: .8rem;
     align-items: center;
     justify-content: space-evenly;
@@ -89,7 +144,7 @@ td span img {
 }
 
 .result-title, .result-text {
-
+    
     font-weight: 800;
     text-align: -webkit-center;
 }
@@ -99,5 +154,18 @@ td span img {
 @media only screen and (max-width: 500px) {
     tr {
         height: 3rem;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .results-container{
+        width: 90%;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+    .result-card-wrapper {
+        width: 100%;
+        margin-bottom: 3vh;
     }
 }

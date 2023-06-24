@@ -3,7 +3,7 @@
     /* justify-items: center; */
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     gap: 5rem;
-    padding: 1rem;
+    padding: 0 1rem;
 }
 
 h2 {

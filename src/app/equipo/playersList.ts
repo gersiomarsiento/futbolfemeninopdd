@@ -4,7 +4,7 @@ export const playersList = [
         "title": "Player 1",
         "name": "Maeva Chapus",
         "posicion": "Delantera",
-        "altura": "1.68 mts",
+        "altura": "1.71 mts",
         "img": "assets/img/foot.jpg",
         "origen": "Marsella (Francia)",
         "nacimiento": "11.07.1994",
@@ -13,12 +13,12 @@ export const playersList = [
       {
         "id": 2,
         "title": "Player 2",
-        "name": "Triana ",
+        "name": "Triana",
         "posicion": "Arquera",
         "img": "assets/img/foot.jpg",
-        "altura": "1.68 mts",
+        "altura": "1,70 mts",
         "origen": "Uruguay",
-        "nacimiento": "11.07.1994",
+        "nacimiento": "",
         "joined": "2023"
       },
       {
@@ -27,10 +27,10 @@ export const playersList = [
         "name": "Dani",
         "posicion": "Defensora",
         "img": "assets/img/foot.jpg",
-        "altura": "1.68 mts",
-        "origen": "Marsella, Francia",
-        "nacimiento": "11.07.1994",
-        "joined": "2020"
+        "altura": "",
+        "origen": "",
+        "nacimiento": "",
+        "joined": ""
       },
       {
         "id": 4,
@@ -38,43 +38,43 @@ export const playersList = [
         "name": "Romina Aguirre",
         "posicion": "Arquera",
         "img": "assets/img/foot.jpg",
-        "altura": "1.68 mts",
-        "origen": "Marsella, Francia",
-        "nacimiento": "11.07.1994",
-        "joined": "2020"
+        "altura": "1,60 mts",
+        "origen": "Buenos Aires (Argentina)",
+        "nacimiento": "",
+        "joined": ""
       },
       {
         "id": 5,
         "title": "Player 5",
-        "name": "Paz",
+        "name": "Tatiana Paz Margulis",
         "posicion": "Mediocampista",
         "img": "assets/img/foot.jpg",
-        "altura": "1.68 mts",
-        "origen": "Marsella, Francia",
-        "nacimiento": "11.07.1994",
+        "altura": "1,67 mts",
+        "origen": "Buenos Aires (Argentina)",
+        "nacimiento": "29.12/.1989",
         "joined": "2020"
       },
       {
         "id": 6,
         "title": "Player 6",
-        "name": "Gise",
+        "name": "Gisela Peña",
         "posicion": "Delantera",
         "img": "assets/img/foot.jpg",
-        "altura": "1.68 mts",
-        "origen": "Marsella, Francia",
-        "nacimiento": "11.07.1994",
-        "joined": "2020"
+        "altura": "1,57 mts",
+        "origen": "Jujuy (Argentina)",
+        "nacimiento": "05.09.1990",
+        "joined": "2022"
       },
       {
         "id": 7,
         "title": "Player 7",
-        "name": "Gala",
+        "name": "Florencia Galarraga",
         "posicion": "Defensa",
         "img": "assets/img/foot.jpg",
-        "altura": "1.68 mts",
-        "origen": "Marsella, Francia",
-        "nacimiento": "11.07.1994",
-        "joined": "2020"
+        "altura": "1.70 mts",
+        "origen": "Paraná (Argentina)",
+        "nacimiento": "26.02.1988",
+        "joined": "2023"
       },
       {
         "id": 8,
@@ -101,34 +101,45 @@ export const playersList = [
       {
         "id": 10,
         "title": "Player 10",
-        "name": "Aris Bentancour",
-        "posicion": "Mediocampista",
+        "name": "Aris Bentancor",
+        "posicion": "Defensa",
         "img": "assets/img/foot.jpg",
-        "altura": "1.68 mts",
-        "origen": "Marsella, Francia",
-        "nacimiento": "11.07.1994",
+        "altura": "1,65 mts",
+        "origen": "Espíritu Santo , Vitória (Brasil)",
+        "nacimiento": "04.07.1992",
         "joined": "2020"
       },
       {
         "id": 11,
         "title": "Player 11",
-        "name": "Flor",
-        "posicion": "Delantera",
-        "img": "assets/img/flor.jpg",
-        "altura": "1.68 mts",
-        "origen": "Marsella, Francia",
-        "nacimiento": "11.07.1994",
-        "joined": "2020"
+      "name": "Florencia Cabrera",
+        "posicion": "Mediocampista",
+        "img": "assets/img/foot.jpg",
+        "altura": "1,67 mts",
+        "origen": "Canelones (Uruguay)",
+        "nacimiento": "11.01.1997",
+        "joined": "2001"
       },
       {
         "id": 12,
-        "title": "Player 11",
-        "name": "Yose",
-        "posicion": "Mediocamista",
+        "title": "Player 12",
+        "name": "Yoselin Gularte",
+        "posicion": "Mediocampista",
         "img": "assets/img/foot.jpg",
-        "altura": "1.68 mts",
-        "origen": "Marsella, Francia",
-        "nacimiento": "11.07.1994",
-        "joined": "2020"
+        "altura": "1,68 mts",
+        "origen": "Salto (Uruguay)",
+        "nacimiento": "01.10.2001",
+        "joined": "2022"
+      },
+      {
+        "id": 13,
+        "title": "Player 13",
+        "name": "Ro",
+        "posicion": "",
+        "img": "assets/img/foot.jpg",
+        "altura": "",
+        "origen": "",
+        "nacimiento": "",
+        "joined": ""
       }
 ]

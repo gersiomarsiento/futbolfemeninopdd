@@ -1,0 +1,92 @@
+.apoyanos-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: 700px;
+    margin-bottom: 1rem;
+}
+
+.aporte-link {
+    text-decoration: none;
+    transition: .2s;
+    height: 70px;
+    width: 140px;
+    color: var(--color3);
+    background: var(--color1);
+    font-size: 2rem;
+    font-weight: 800;
+    border: .2rem solid var(--color3);
+    border-radius: 1rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: .2rem .2rem 0 .2rem var(--color5);
+    padding: .2rem;
+}
+
+.aportes-mpago {
+    display: grid;
+}
+.aportes-mpago span {
+    transform: translate(0px, 20px);
+    font-weight: 800;
+}
+
+.aporte-link.paypal {
+    font-size: 1rem;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+.paypal-text {
+    transform: translate(0px, 20px);
+}
+
+.aporte-link:hover {
+    transform: scale(1.2, 1.2);
+    transition: .2s;
+    /* background-image:  url("src/assets/img/100.jpg"); CHECK LATER --- BILL ON HOVER
+    background-size: cover; */
+    background: var(--color3);
+    border: .2rem solid var(--color1);
+}
+.aporte-link:hover *{
+    color: var(--color1);
+}
+
+.aporte-card {
+    color: var(--color3);
+}
+
+.money-symbol {
+    font-size: 1.4rem;
+    margin-right: .4rem;
+}
+
+.apoyanos-text-container {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.apoyanos-text {
+    margin-bottom: 2rem;
+}
+
+.payments-container {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto 3vh;
+    border-radius: 1rem;
+    border: .2rem solid var(--color3);
+    background: var(--color1);
+    padding-bottom: 1vh;
+    box-shadow: .2rem .2rem 0 .2rem;
+}
+
+.pay-logo {
+    height: 80px;
+    border-radius: 1rem;
+}
