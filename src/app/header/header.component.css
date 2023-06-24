@@ -1,10 +1,7 @@
 .header {
     width: 100%;
     background-color: var(--color5);
-    /* background-color: rgba(26, 63, 147,.5); */
-    /* position: fixed; */
     position: sticky;
-    /* IMPORTED */
     display: flex;
     align-items: center;
     height: 10vh;
@@ -83,7 +80,10 @@
     z-index: 2;
     overflow: hidden;
     position: fixed;
-    background: linear-gradient(to right, var(--color5), var(--color4) 50%, var(--color5) 100%);
+    background: url("/assets/img/Gradient2.png");
+    
+    background-position: top;
+    /* background: linear-gradient(to right, var(--color5), var(--color4) 50%, var(--color5) 100%); */
 }
 
 .header .position-init {

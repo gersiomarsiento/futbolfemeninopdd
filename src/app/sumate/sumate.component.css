@@ -8,6 +8,10 @@
     max-width: 800px;
 }
 
+.sumate-img {
+    border-radius: 1rem;
+}
+
 .front-gimnasio, .map-gimnasio {
     width: 100%;
     margin: 1rem 0;
