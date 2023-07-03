@@ -17,7 +17,7 @@ export class LeagueTableComponent {
       // TORNEO PREPARACIÓN
       { equipoLocal: 'La Paloma', golesLocal: '1', golesVisitante: '5', equipoVisitante: 'P. Congreso' },
       { equipoLocal: 'La Estación', golesLocal: '7', golesVisitante: '8', equipoVisitante: 'Electras' },
-      { equipoLocal: 'Las Piedras', golesLocal: '15', golesVisitante: '3', equipoVisitante: 'Bohemias' },
+      { equipoLocal: 'Las Piedras', golesLocal: '3', golesVisitante: '14', equipoVisitante: 'Bohemias' },
       { equipoLocal: 'La Abasto', golesLocal: '7', golesVisitante: '1', equipoVisitante: 'La Ola' },
     ],
     [
