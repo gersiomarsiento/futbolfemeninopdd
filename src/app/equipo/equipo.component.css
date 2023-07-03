@@ -4,9 +4,12 @@
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     gap: 5rem;
     padding: 0 1rem;
+    margin-bottom: 3vh;
 }
 
 h2 {
     padding: 2rem;
     font-weight: 800;
 }
+
+

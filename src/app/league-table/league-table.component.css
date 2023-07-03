@@ -23,11 +23,20 @@
 }
 
 tr:nth-of-type(2n+1) {
-    background: rgb(186, 195, 202);
+    background: #b9d4e9;
+    /* background: rgb(199, 208, 215); */
 }
 thead tr {
     background: var(--color1);
 }
+
+.header-equipo-column {
+    width: 170px;
+}
+.header-favor-column, .header-contra-column, .header-contra-column  {
+    padding: 0.05rem;
+}
+
 
 .serie-header-content th{
     background: var(--color5);
