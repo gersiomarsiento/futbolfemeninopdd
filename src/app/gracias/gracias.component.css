@@ -1,0 +1,4 @@
+.gracias-container, h1, h3 {
+    padding: 1rem;
+    color: var(--color1);
+}

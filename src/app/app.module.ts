@@ -22,6 +22,7 @@ import { CarouselModule } from './carousel/carousel.module';
 import { ContactoComponent } from './contacto/contacto.component';
 import { ApoyanosComponent } from './apoyanos/apoyanos.component';
 import { UnderConstructionComponent } from './under-construction/under-construction.component';
+import { GraciasComponent } from './gracias/gracias.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { UnderConstructionComponent } from './under-construction/under-construct
     ContactFormComponent,
     ContactoComponent,
     ApoyanosComponent,
-    UnderConstructionComponent
+    UnderConstructionComponent,
+    GraciasComponent
   ],
   imports: [
     BrowserModule,

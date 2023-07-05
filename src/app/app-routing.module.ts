@@ -9,6 +9,7 @@ import { EquipoComponent } from './equipo/equipo.component';
 import { LigaComponent } from './liga/liga.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { ApoyanosComponent } from './apoyanos/apoyanos.component';
+import { GraciasComponent } from './gracias/gracias.component';
 
 const routes: Routes = [
   {
@@ -42,6 +43,10 @@ const routes: Routes = [
   {
     path: 'apoyanos',
     component: ApoyanosComponent
+  },
+  {
+    path: 'gracias',
+    component: GraciasComponent
   }
 ]
 
