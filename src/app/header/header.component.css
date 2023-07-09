@@ -80,10 +80,10 @@
     z-index: 2;
     overflow: hidden;
     position: fixed;
-    background: url("/assets/img/Gradient2.png");
+    /* background: url("/assets/img/Gradient2.png"); */
     
     background-position: top;
-    /* background: linear-gradient(to right, var(--color5), var(--color4) 50%, var(--color5) 100%); */
+    background: linear-gradient(to right, var(--color5), var(--color4) 50%, var(--color5) 100%);
 }
 
 .header .position-init {
@@ -109,7 +109,7 @@
     text-decoration: none;
     border-radius: 10px;
     font-weight: 700;
-    padding: 0 2rem;
+    padding: 0 .6rem;
 }
 
 .nav-list > a:hover {
@@ -146,7 +146,10 @@
     }
     .nav-list a{
         flex: 1 1 0px;
+        padding: 0;
+        margin: 2%;
     }
+    
     .navbar-container{
         visibility: visible;
         display: contents;

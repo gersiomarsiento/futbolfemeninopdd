@@ -131,17 +131,17 @@ export const playersList = [
         "nacimiento": "01.10.2001",
         "joined": "2022"
       },
-      // {
-      //   "id": 13,
-      //   "title": "Player 13",
-      //   "name": "Ro",
-      //   "posicion": "",
-      //   "img": "assets/img/jugadoras/ro.webp",
-      //   "altura": "",
-      //   "origen": "",
-      //   "nacimiento": "",
-      //   "joined": ""
-      // },
+      {
+        "id": 13,
+        "title": "Player 13",
+        "name": "Rocío Celeste Rojas",
+        "posicion": "Mediocampista",
+        "img": "assets/img/jugadoras/ro.webp",
+        "altura": "1,57 mts",
+        "origen": "Villa Mercedes, San Luis (Argentina)",
+        "nacimiento": "20.06.1995",
+        "joined": "2023"
+      },
       {
         "id": 14,
         "title": "Player 14",
