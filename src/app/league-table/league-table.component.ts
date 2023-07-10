@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class LeagueTableComponent {
 
 
-  currentMatchday = 1;
+  currentMatchday = 2;
   totalMatchdays = 3;
 
   matches = [
@@ -22,10 +22,10 @@ export class LeagueTableComponent {
     ],
     [
       // Matchday 2
-      { equipoLocal: 'La Paloma', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Electras' },
-      { equipoLocal: 'La Estación', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'P. Congreso' },
-      { equipoLocal: 'Las Piedras', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Abasto' },
-      { equipoLocal: 'La Ola', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Bohemias' },
+      { equipoLocal: 'La Paloma', golesLocal: '11', golesVisitante: '4', equipoVisitante: 'Electras' },
+      { equipoLocal: 'La Estación', golesLocal: '6', golesVisitante: '11', equipoVisitante: 'P. Congreso' },
+      { equipoLocal: 'Las Piedras', golesLocal: '2', golesVisitante: '4', equipoVisitante: 'La Abasto' },
+      { equipoLocal: 'La Ola', golesLocal: '2', golesVisitante: '13', equipoVisitante: 'Bohemias' },
     ],
     [
       // Matchday 3
