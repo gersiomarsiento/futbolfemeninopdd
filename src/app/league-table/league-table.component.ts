@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class LeagueTableComponent {
 
 
-  currentMatchday = 2;
+  currentMatchday = 3;
   totalMatchdays = 3;
 
   matches = [

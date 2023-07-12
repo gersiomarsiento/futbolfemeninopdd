@@ -7,3 +7,15 @@
 .table-component {
     text-align: -webkit-center;
 }
+
+#bannerLogo{
+    height: 10rem;
+    filter: drop-shadow(5px 5px 6px var(--color3));
+    padding-bottom: 2rem;
+}
+
+/* @media only screen and (max-width: 600px) {
+    #bannerLogo {
+        height: 10rem;
+    }
+} */
