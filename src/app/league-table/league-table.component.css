@@ -65,6 +65,10 @@ td img {
     font-weight: 800;
 }
 
+.team-name-fixture {
+    min-width: 100px;
+}
+
 /* FIXTURE */
 .matchday-header-container {
     display: flex;

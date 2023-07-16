@@ -1,0 +1,42 @@
+<table class="league-table">
+    <thead class="serie-header">
+        <tr class="serie-header-content">
+            <th colspan="100">{{serieTitle}}</th>
+        </tr>
+    </thead>
+    <thead>
+        <tr>
+            <th class="header-posicion-column">#</th>
+            <th class="header-equipo-column">Equipo</th>
+            <th class="header-jugados-column">J</th>
+            <th class="header-ganados-column">G</th>
+            <th class="header-empatados-column">E</th>
+            <th class="header-perdidos-column">P</th>
+            <th class="header-favor-column">GF</th>
+            <th class="header-contra-column">GC</th>
+            <th class="header-diferencia-column">DIF</th>
+            <th class="header-puntos-column">Pts</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let equipo of equipos;let pos = index">
+            <td>{{pos + 1 }}
+            </td>
+            <td class="team-name-logo-centered">
+                <span>
+                    <img src="assets/img/club-logos/{{equipo.name.split(' ').length > 1 ? equipo.name.split(' ')[1].toLowerCase() : equipo.name.toLowerCase()}}.webp" alt="">
+                </span>
+                <br>
+                {{equipo.name}}
+            </td>
+            <td>{{equipo.jugados}}</td>
+            <td>{{equipo.ganados}}</td>
+            <td>{{equipo.empatados}}</td>
+            <td>{{equipo.perdidos}}</td>
+            <td>{{equipo.golesFavor}}</td>
+            <td>{{equipo.golesContra}}</td>
+            <td>{{equipo.diferencia<0?equipo.diferencia:'+'+equipo.diferencia}}</td>
+            <td class="pts">{{equipo.puntos}}</td>
+        </tr>
+    </tbody>
+</table>

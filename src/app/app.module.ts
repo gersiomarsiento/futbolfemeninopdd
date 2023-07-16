@@ -23,6 +23,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { ApoyanosComponent } from './apoyanos/apoyanos.component';
 import { UnderConstructionComponent } from './under-construction/under-construction.component';
 import { GraciasComponent } from './gracias/gracias.component';
+import { LeagueTableStandingsComponent } from './league-table-standings/league-table-standings.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { GraciasComponent } from './gracias/gracias.component';
     ContactoComponent,
     ApoyanosComponent,
     UnderConstructionComponent,
-    GraciasComponent
+    GraciasComponent,
+    LeagueTableStandingsComponent
   ],
   imports: [
     BrowserModule,

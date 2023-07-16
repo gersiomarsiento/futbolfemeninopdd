@@ -3,151 +3,9 @@
     <h2>Torneo Preparación 2023<br> 
     </h2>
 
-    <!-- SERIE A TABLE -->
-    <table class="league-table">
-        <thead class="serie-header">
-            <tr class="serie-header-content">
-                <th colspan="100">Serie A</th>
-            </tr>
-        </thead>
-        <thead>
-            <tr>
-                <th class="header-posicion-column">#</th>
-                <th class="header-equipo-column">Equipo</th>
-                <th class="header-jugados-column">J</th>
-                <th class="header-ganados-column">G</th>
-                <th class="header-empatados-column">E</th>
-                <th class="header-perdidos-column">P</th>
-                <th class="header-favor-column">GF</th>
-                <th class="header-contra-column">GC</th>
-                <th class="header-diferencia-column">DIF</th>
-                <th class="header-puntos-column">Pts</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td class="team-name-logo-centered"><span><img src="assets/img/club-logos/congreso.webp" alt=""></span><br>Plaza Congreso</td>
-                <td>2</td>
-                <td>2</td>
-                <td>0</td>
-                <td>0</td>
-                <td>16</td>
-                <td>7</td>
-                <td>+9</td>
-                <td class="pts">4</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td class="team-name-logo-centered"><span><img src="assets/img/club-logos/paloma.webp" alt=""></span><br>La Paloma</td>
-                <td>2</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>12</td>
-                <td>9</td>
-                <td>-3</td>
-                <td class="pts">2</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td class="team-name-logo-centered"><span><img src="assets/img/club-logos/electras.webp" alt=""></span><br>Electras</td>
-                <td>2</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>12</td>
-                <td>18</td>
-                <td>-6</td>
-                <td class="pts">2</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td class="team-name-logo-centered"><span><img src="assets/img/club-logos/estación.webp" alt=""></span><br>La Estación</td>
-                <td>2</td>
-                <td>0</td>
-                <td>0</td>
-                <td>2</td>
-                <td>13</td>
-                <td>19</td>
-                <td>-6</td>
-                <td class="pts">0</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <!-- SERIE B TABLE -->
-    <table class="league-table">
-        <thead class="serie-header">
-            <tr class="serie-header-content">
-                <th colspan="10">Serie B</th>
-            </tr>
-        </thead>
-        <thead>
-            <tr>
-                <th class="header-posicion-column">#</th>
-                <th class="header-equipo-column">Equipo</th>
-                <th class="header-jugados-column">J</th>
-                <th class="header-ganados-column">G</th>
-                <th class="header-empatados-column">E</th>
-                <th class="header-perdidos-column">P</th>
-                <th class="header-favor-column">GF</th>
-                <th class="header-contra-column">GC</th>
-                <th class="header-diferencia-column">DIF</th>
-                <th class="header-puntos-column">Pts</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td class="team-name-logo-centered"><span><img src="assets/img/club-logos/bohemias.webp" alt=""></span><br>Bohemias</td>
-                <td>2</td>
-                <td>2</td>
-                <td>0</td>
-                <td>0</td>
-                <td>27</td>
-                <td>5</td>
-                <td>+22</td>
-                <td class="pts">4</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td class="team-name-logo-centered"><span><img src="assets/img/club-logos/abasto.webp" alt=""></span><br>La Abasto</td>
-                <td>2</td>
-                <td>2</td>
-                <td>0</td>
-                <td>0</td>
-                <td>11</td>
-                <td>3</td>
-                <td>+8</td>
-                <td class="pts">4</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td class="team-name-logo-centered"><span><img src="assets/img/club-logos/piedras.webp" alt=""></span><br>Las Piedras</td>
-                <td>2</td>
-                <td>0</td>
-                <td>0</td>
-                <td>2</td>
-                <td>5</td>
-                <td>18</td>
-                <td>-13</td>
-                <td class="pts">0</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td class="team-name-logo-centered"><span><img src="assets/img/club-logos/ola.webp" alt=""></span><br>La Ola</td>
-                <td>2</td>
-                <td>0</td>
-                <td>0</td>
-                <td>2</td>
-                <td>3</td>
-                <td>20</td>
-                <td>-17</td>
-                <td class="pts">0</td>
-            </tr>
-        </tbody>
-    </table>
+    <!-- SERIE A AND B LEAGUE TABLES -->
+    <app-league-table-standings [serieTitle]="'Serie A'" [equipos]="equiposSerieA"></app-league-table-standings>
+    <app-league-table-standings [serieTitle]="'Serie B'" [equipos]="equiposSerieB"></app-league-table-standings>
 
     <!-- FIXTURE -->
     <h2>Fixture</h2>
@@ -166,10 +24,10 @@
         <tbody>
             <tr *ngFor="let match of matches[currentMatchday - 1]">
                 <!-- Iterate through teams (matchday), look up info and bring IMG by splitting up names -->
-                <td class="team-name-logo-centered"><span><img [src]="'assets/img/club-logos/' + (match.equipoLocal.split(' ').length > 1 ? match.equipoLocal.split(' ')[1].toLowerCase() : match.equipoLocal.toLowerCase()) + '.webp'" alt=""></span><br>{{ match.equipoLocal }}</td>
+                <td class="team-name-fixture team-name-logo-centered"><span><img [src]="'assets/img/club-logos/' + (match.equipoLocal.split(' ').length > 1 ? match.equipoLocal.split(' ')[1].toLowerCase() : match.equipoLocal.toLowerCase()) + '.webp'" alt=""></span><br>{{ match.equipoLocal }}</td>
                 <td class="fixture-result">{{ match.golesLocal }}</td>
                 <td class="fixture-result">{{ match.golesVisitante }}</td>
-                <td class="team-name-logo-centered"><span><img [src]="'assets/img/club-logos/' + (match.equipoVisitante.split(' ').length > 1 ? match.equipoVisitante.split(' ')[1].toLowerCase() : match.equipoVisitante.toLowerCase()) + '.webp'" alt=""></span><br>{{ match.equipoVisitante }}</td>
+                <td class="team-name-fixture team-name-logo-centered"><span><img [src]="'assets/img/club-logos/' + (match.equipoVisitante.split(' ').length > 1 ? match.equipoVisitante.split(' ')[1].toLowerCase() : match.equipoVisitante.toLowerCase()) + '.webp'" alt=""></span><br>{{ match.equipoVisitante }}</td>
             </tr>
         </tbody>
     </table>
@@ -194,6 +52,6 @@
                 <p class="result-text">16/07 <br> 18:30 hs</p>
                 <img src="assets/img/club-logos/piedras.webp" alt="">
             </div>
-            <p class="result-title">Club Cader (Rocha)</p>
+            <p class="result-title">Club Unión (Rocha)</p>
         </div>
     </div>

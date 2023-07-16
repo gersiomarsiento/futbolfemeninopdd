@@ -6,18 +6,24 @@
 .card, .favorite {
     border: 2px solid var(--color4);
     border-radius: 2%;
-    padding: 1rem;
+    /* padding: 1rem; */
+}
+
+.wrapper-text {
+    padding: 1.5rem
 }
 
 .player-detail {
     color: var(--color1);
-    padding: .6rem;
+    padding: .4rem;
+    font-size: 14px;
 }
 
 .image {
     width: 100%;
     height: 300px;
-    border-radius: 2%;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
     object-fit: cover;
 }
 
