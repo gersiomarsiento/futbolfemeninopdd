@@ -27,10 +27,10 @@ export class LeagueTableComponent {
     ],
     [
       // Matchday 3
-      { equipoLocal: 'La Paloma', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Estación' },
+      { equipoLocal: 'La Paloma', golesLocal: '7', golesVisitante: '7', equipoVisitante: 'La Estación' },
       { equipoLocal: 'Electras', golesLocal: '2', golesVisitante: '9', equipoVisitante: 'Plaza Congreso' },
-      { equipoLocal: 'Las Piedras', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Ola' },
-      { equipoLocal: 'La Abasto', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Bohemias' },
+      { equipoLocal: 'Las Piedras', golesLocal: '5', golesVisitante: '5', equipoVisitante: 'La Ola' },
+      { equipoLocal: 'La Abasto', golesLocal: '13', golesVisitante: '2', equipoVisitante: 'Bohemias' },
     ],
     // Matches for each matchday
     // APERTURA + CLAUSURA
