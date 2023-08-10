@@ -6,84 +6,84 @@ import { Component } from '@angular/core';
   styleUrls: ['./league-table.component.css']
 })
 export class LeagueTableComponent {
-  currentMatchday = 3;
-  totalMatchdays = 3;
+  currentMatchday = 1;
+  totalMatchdays = 7;
 
   matches = [
-    [
-      // Matchday 1
-      // TORNEO PREPARACIÓN
-      { equipoLocal: 'La Paloma', golesLocal: '1', golesVisitante: '5', equipoVisitante: 'Plaza Congreso' },
-      { equipoLocal: 'La Estación', golesLocal: '7', golesVisitante: '8', equipoVisitante: 'Electras' },
-      { equipoLocal: 'Las Piedras', golesLocal: '3', golesVisitante: '14', equipoVisitante: 'Bohemias' },
-      { equipoLocal: 'La Abasto', golesLocal: '7', golesVisitante: '1', equipoVisitante: 'La Ola' },
-    ],
-    [
-      // Matchday 2
-      { equipoLocal: 'La Paloma', golesLocal: '11', golesVisitante: '4', equipoVisitante: 'Electras' },
-      { equipoLocal: 'La Estación', golesLocal: '6', golesVisitante: '11', equipoVisitante: 'Plaza Congreso' },
-      { equipoLocal: 'Las Piedras', golesLocal: '2', golesVisitante: '4', equipoVisitante: 'La Abasto' },
-      { equipoLocal: 'La Ola', golesLocal: '2', golesVisitante: '13', equipoVisitante: 'Bohemias' },
-    ],
-    [
-      // Matchday 3
-      { equipoLocal: 'La Paloma', golesLocal: '7', golesVisitante: '7', equipoVisitante: 'La Estación' },
-      { equipoLocal: 'Electras', golesLocal: '2', golesVisitante: '9', equipoVisitante: 'Plaza Congreso' },
-      { equipoLocal: 'Las Piedras', golesLocal: '5', golesVisitante: '5', equipoVisitante: 'La Ola' },
-      { equipoLocal: 'La Abasto', golesLocal: '13', golesVisitante: '2', equipoVisitante: 'Bohemias' },
-    ],
-    // Matches for each matchday
-    // APERTURA + CLAUSURA
     // [
     //   // Matchday 1
-    //   { equipoLocal: 'La Paloma', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Plaza Congreso' },
-    //   { equipoLocal: 'Electras', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Las Piedras' },
-    //   { equipoLocal: 'La Estación', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Ola' },
-    //   { equipoLocal: 'Bohemias', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Abasto' },
+    //   // TORNEO PREPARACIÓN
+    //   { equipoLocal: 'La Paloma', golesLocal: '1', golesVisitante: '5', equipoVisitante: 'Plaza Congreso' },
+    //   { equipoLocal: 'La Estación', golesLocal: '7', golesVisitante: '8', equipoVisitante: 'Electras' },
+    //   { equipoLocal: 'Las Piedras', golesLocal: '3', golesVisitante: '14', equipoVisitante: 'Bohemias' },
+    //   { equipoLocal: 'La Abasto', golesLocal: '7', golesVisitante: '1', equipoVisitante: 'La Ola' },
     // ],
     // [
     //   // Matchday 2
-    //   { equipoLocal: 'Plaza Congreso', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Electras' },
-    //   { equipoLocal: 'La Abasto', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Estación' },
-    //   { equipoLocal: 'La Paloma', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Bohemias' },
-    //   { equipoLocal: 'La Ola', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Las Piedras' },
+    //   { equipoLocal: 'La Paloma', golesLocal: '11', golesVisitante: '4', equipoVisitante: 'Electras' },
+    //   { equipoLocal: 'La Estación', golesLocal: '6', golesVisitante: '11', equipoVisitante: 'Plaza Congreso' },
+    //   { equipoLocal: 'Las Piedras', golesLocal: '2', golesVisitante: '4', equipoVisitante: 'La Abasto' },
+    //   { equipoLocal: 'La Ola', golesLocal: '2', golesVisitante: '13', equipoVisitante: 'Bohemias' },
     // ],
     // [
     //   // Matchday 3
-    //   { equipoLocal: 'Bohemias', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Plaza Congreso' },
-    //   { equipoLocal: 'Electras', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Ola' },
-    //   { equipoLocal: 'La Abasto', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Paloma' },
-    //   { equipoLocal: 'Las Piedras', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Estación' },
+    //   { equipoLocal: 'La Paloma', golesLocal: '7', golesVisitante: '7', equipoVisitante: 'La Estación' },
+    //   { equipoLocal: 'Electras', golesLocal: '2', golesVisitante: '9', equipoVisitante: 'Plaza Congreso' },
+    //   { equipoLocal: 'Las Piedras', golesLocal: '5', golesVisitante: '5', equipoVisitante: 'La Ola' },
+    //   { equipoLocal: 'La Abasto', golesLocal: '13', golesVisitante: '2', equipoVisitante: 'Bohemias' },
     // ],
-    // [
-    //   // Matchday 4
-    //   { equipoLocal: 'La Ola', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Paloma' },
-    //   { equipoLocal: 'Bohemias', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Las Piedras' },
-    //   { equipoLocal: 'Plaza Congreso', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Abasto' },
-    //   { equipoLocal: 'La Estación', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Electras' },
-    // ],
-    // [
-    //   // Matchday 5
-    //   { equipoLocal: 'La Paloma', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Estación' },
-    //   { equipoLocal: 'Las Piedras', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Plaza Congreso' },
-    //   { equipoLocal: 'La Abasto', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Ola' },
-    //   { equipoLocal: 'Electras', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Bohemias' },
-    // ],
-    // [
-    //   // Matchday 6
-    //   { equipoLocal: 'Electras', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Paloma' },
-    //   { equipoLocal: 'Plaza Congreso', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Ola' },
-    //   { equipoLocal: 'Las Piedras', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Abasto' },
-    //   { equipoLocal: 'La Estación', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Bohemias' },
+    // Matches for each matchday
+    // APERTURA + CLAUSURA
+    [
+      // Matchday 1
+      { equipoLocal: 'La Paloma', golesLocal: '4', golesVisitante: '6', equipoVisitante: 'Plaza Congreso' },
+      { equipoLocal: 'Electras', golesLocal: '15', golesVisitante: '4', equipoVisitante: 'Las Piedras' },
+      { equipoLocal: 'La Estación', golesLocal: '5', golesVisitante: '4', equipoVisitante: 'La Ola' },
+      { equipoLocal: 'Bohemias', golesLocal: '4', golesVisitante: '7', equipoVisitante: 'La Abasto' },
+    ],
+    [
+      // Matchday 2
+      { equipoLocal: 'Plaza Congreso', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Electras' },
+      { equipoLocal: 'La Abasto', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Estación' },
+      { equipoLocal: 'La Paloma', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Bohemias' },
+      { equipoLocal: 'La Ola', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Las Piedras' },
+    ],
+    [
+      // Matchday 3
+      { equipoLocal: 'Bohemias', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Plaza Congreso' },
+      { equipoLocal: 'Electras', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Ola' },
+      { equipoLocal: 'La Abasto', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Paloma' },
+      { equipoLocal: 'Las Piedras', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Estación' },
+    ],
+    [
+      // Matchday 4
+      { equipoLocal: 'La Ola', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Paloma' },
+      { equipoLocal: 'Bohemias', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Las Piedras' },
+      { equipoLocal: 'Plaza Congreso', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Abasto' },
+      { equipoLocal: 'La Estación', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Electras' },
+    ],
+    [
+      // Matchday 5
+      { equipoLocal: 'La Paloma', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Estación' },
+      { equipoLocal: 'Las Piedras', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Plaza Congreso' },
+      { equipoLocal: 'La Abasto', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Ola' },
+      { equipoLocal: 'Electras', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Bohemias' },
+    ],
+    [
+      // Matchday 6
+      { equipoLocal: 'Electras', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Paloma' },
+      { equipoLocal: 'Plaza Congreso', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Ola' },
+      { equipoLocal: 'Las Piedras', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Abasto' },
+      { equipoLocal: 'La Estación', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Bohemias' },
      
-    // ],
-    // [
-    //   // Matchday 7
-    //   { equipoLocal: 'La Abasto', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Electras' },
-    //   { equipoLocal: 'La Ola', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Bohemias' },
-    //   { equipoLocal: 'La Paloma', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Las Piedras' },
-    //   { equipoLocal: 'Plaza Congreso', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Estación' },
-    // ],
+    ],
+    [
+      // Matchday 7
+      { equipoLocal: 'La Abasto', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Electras' },
+      { equipoLocal: 'La Ola', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Bohemias' },
+      { equipoLocal: 'La Paloma', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Las Piedras' },
+      { equipoLocal: 'Plaza Congreso', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Estación' },
+    ],
     
   ];
   equipos =[ //All teams' stats
@@ -199,7 +199,8 @@ export class LeagueTableComponent {
       }
     }
     this.equiposSerieA.sort(sortTeamsByCriteria); 
-    this.equiposSerieB.sort(sortTeamsByCriteria)
+    this.equiposSerieB.sort(sortTeamsByCriteria);
+    this.equipos.sort(sortTeamsByCriteria);
   }
 
   get pages() {

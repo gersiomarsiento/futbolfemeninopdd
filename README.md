@@ -1,6 +1,16 @@
 <<<<<<< HEAD
 # La Ola - Futbol Femenino Punta del Diablo
 Website created for Punta del Diablo's first female fútbol team.
+
+Deploy with: 
+    npm run deploy "Your commit message here"
+will run the following commands:
+    ng build
+    git add .
+    git commit -m \"$1\"
+    git push github main
+    netlify deploy --prod"
+
 =======
 # AngularApp
 
