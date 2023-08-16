@@ -43,10 +43,10 @@ export class LeagueTableComponent {
     ],
     [
       // Matchday 2
-      { equipoLocal: 'Plaza Congreso', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Electras' },
-      { equipoLocal: 'La Abasto', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Estación' },
-      { equipoLocal: 'La Paloma', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Bohemias' },
-      { equipoLocal: 'La Ola', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Las Piedras' },
+      { equipoLocal: 'Plaza Congreso', golesLocal: '8', golesVisitante: '0', equipoVisitante: 'Electras' },
+      { equipoLocal: 'La Abasto', golesLocal: '4', golesVisitante: '2', equipoVisitante: 'La Estación' },
+      { equipoLocal: 'La Paloma', golesLocal: '9', golesVisitante: '4', equipoVisitante: 'Bohemias' },
+      { equipoLocal: 'La Ola', golesLocal: '5', golesVisitante: '5', equipoVisitante: 'Las Piedras' },
     ],
     [
       // Matchday 3
