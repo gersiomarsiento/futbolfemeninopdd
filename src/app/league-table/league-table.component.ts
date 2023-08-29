@@ -8,6 +8,223 @@ import { Component } from '@angular/core';
 export class LeagueTableComponent {
   currentMatchday = 1;
   totalMatchdays = 7;
+  listaEquiposRocha = ["La Abasto", "Plaza Congreso", "La Estación"];
+
+  equipos =[ //All teams' stats
+  {
+    name: "La Paloma",
+    serie: "A",
+    jugados: 0,
+    ganados: 0,
+    empatados: 0,
+    perdidos: 0,
+    golesFavor: 0,
+    golesContra: 0,
+    diferencia: 0, 
+    puntos: 0,
+    rocha: false
+  },
+  {
+    name: "Plaza Congreso",
+    serie: "A",
+    jugados: 0,
+    ganados: 0,
+    empatados: 0,
+    perdidos: 0,
+    golesFavor: 0,
+    golesContra: 0,
+    diferencia: 0, 
+    puntos: 0,
+    rocha: true
+  },
+  {
+    name: "Electras",
+    serie: "A",
+    jugados: 0,
+    ganados: 0,
+    empatados: 0,
+    perdidos: 0,
+    golesFavor: 0,
+    golesContra: 0,
+    diferencia: 0, 
+    puntos: 0,
+    rocha: false
+  },
+  {
+    name: "La Estación",
+    serie: "A",
+    jugados: 0,
+    ganados: 0,
+    empatados: 0,
+    perdidos: 0,
+    golesFavor: 0,
+    golesContra: 0,
+    diferencia: 0, 
+    puntos: 0,
+    rocha: true
+  },
+  {
+    name: "Bohemias",
+    serie: "B",
+    jugados: 0,
+    ganados: 0,
+    empatados: 0,
+    perdidos: 0,
+    golesFavor: 0,
+    golesContra: 0,
+    diferencia: 0, 
+    puntos: 0,
+    rocha: false
+  },
+  {
+    name: "La Abasto",
+    serie: "B",
+    jugados: 0,
+    ganados: 0,
+    empatados: 0,
+    perdidos: 0,
+    golesFavor: 0,
+    golesContra: 0,
+    diferencia: 0, 
+    puntos: 0,
+    rocha: true
+  },
+  {
+    name: "Las Piedras",
+    serie: "B",
+    jugados: 0,
+    ganados: 0,
+    empatados: 0,
+    perdidos: 0,
+    golesFavor: 0,
+    golesContra: 0,
+    diferencia: 0, 
+    puntos: 0,
+    rocha: false
+  },
+  {
+    name: "La Ola",
+    serie: "B",
+    jugados: 0,
+    ganados: 0,
+    empatados: 0,
+    perdidos: 0,
+    golesFavor: 0,
+    golesContra: 0,
+    diferencia: 0, 
+    puntos: 0,
+    rocha: false
+  }
+  ]
+  equiposRocha =[ 
+  {
+    name: "Plaza Congreso",
+    serie: "A",
+    jugados: 0,
+    ganados: 0,
+    empatados: 0,
+    perdidos: 0,
+    golesFavor: 0,
+    golesContra: 0,
+    diferencia: 0, 
+    puntos: 0,
+    rocha: true
+  },
+  {
+    name: "La Estación",
+    serie: "A",
+    jugados: 0,
+    ganados: 0,
+    empatados: 0,
+    perdidos: 0,
+    golesFavor: 0,
+    golesContra: 0,
+    diferencia: 0, 
+    puntos: 0,
+    rocha: true
+  },
+  {
+    name: "La Abasto",
+    serie: "B",
+    jugados: 0,
+    ganados: 0,
+    empatados: 0,
+    perdidos: 0,
+    golesFavor: 0,
+    golesContra: 0,
+    diferencia: 0, 
+    puntos: 0,
+    rocha: true
+  }
+  ]
+  equiposInterior =[ //All teams' stats
+  {
+    name: "La Paloma",
+    serie: "A",
+    jugados: 0,
+    ganados: 0,
+    empatados: 0,
+    perdidos: 0,
+    golesFavor: 0,
+    golesContra: 0,
+    diferencia: 0, 
+    puntos: 0,
+    rocha: false
+  },
+  {
+    name: "Electras",
+    serie: "A",
+    jugados: 0,
+    ganados: 0,
+    empatados: 0,
+    perdidos: 0,
+    golesFavor: 0,
+    golesContra: 0,
+    diferencia: 0, 
+    puntos: 0,
+    rocha: false
+  },
+  {
+    name: "Bohemias",
+    serie: "B",
+    jugados: 0,
+    ganados: 0,
+    empatados: 0,
+    perdidos: 0,
+    golesFavor: 0,
+    golesContra: 0,
+    diferencia: 0, 
+    puntos: 0,
+    rocha: false
+  },
+  {
+    name: "Las Piedras",
+    serie: "B",
+    jugados: 0,
+    ganados: 0,
+    empatados: 0,
+    perdidos: 0,
+    golesFavor: 0,
+    golesContra: 0,
+    diferencia: 0, 
+    puntos: 0,
+    rocha: false
+  },
+  {
+    name: "La Ola",
+    serie: "B",
+    jugados: 0,
+    ganados: 0,
+    empatados: 0,
+    perdidos: 0,
+    golesFavor: 0,
+    golesContra: 0,
+    diferencia: 0, 
+    puntos: 0,
+    rocha: false
+  }
+  ]
+
 
   matches = [
     // [
@@ -50,17 +267,17 @@ export class LeagueTableComponent {
     ],
     [
       // Matchday 3
-      { equipoLocal: 'Bohemias', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Plaza Congreso' },
-      { equipoLocal: 'Electras', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Ola' },
-      { equipoLocal: 'La Abasto', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Paloma' },
-      { equipoLocal: 'Las Piedras', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Estación' },
+      { equipoLocal: 'Bohemias', golesLocal: '0', golesVisitante: '2', equipoVisitante: 'Plaza Congreso' },
+      { equipoLocal: 'Electras', golesLocal: '10', golesVisitante: '4', equipoVisitante: 'La Ola' },
+      { equipoLocal: 'La Abasto', golesLocal: '3', golesVisitante: '6', equipoVisitante: 'La Paloma' },
+      { equipoLocal: 'Las Piedras', golesLocal: '7', golesVisitante: '7', equipoVisitante: 'La Estación' },
     ],
     [
       // Matchday 4
-      { equipoLocal: 'La Ola', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Paloma' },
-      { equipoLocal: 'Bohemias', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Las Piedras' },
-      { equipoLocal: 'Plaza Congreso', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'La Abasto' },
-      { equipoLocal: 'La Estación', golesLocal: '-', golesVisitante: '-', equipoVisitante: 'Electras' },
+      { equipoLocal: 'La Ola', golesLocal: '3', golesVisitante: '11', equipoVisitante: 'La Paloma' },
+      { equipoLocal: 'Bohemias', golesLocal: '6', golesVisitante: '3', equipoVisitante: 'Las Piedras' },
+      { equipoLocal: 'Plaza Congreso', golesLocal: '0', golesVisitante: '3', equipoVisitante: 'La Abasto' },
+      { equipoLocal: 'La Estación', golesLocal: '2', golesVisitante: '5', equipoVisitante: 'Electras' },
     ],
     [
       // Matchday 5
@@ -86,109 +303,29 @@ export class LeagueTableComponent {
     ],
     
   ];
-  equipos =[ //All teams' stats
-  {
-    name: "La Paloma",
-    serie: "A",
-    jugados: 0,
-    ganados: 0,
-    empatados: 0,
-    perdidos: 0,
-    golesFavor: 0,
-    golesContra: 0,
-    diferencia: 0, 
-    puntos: 0
-  },
-  {
-    name: "Plaza Congreso",
-    serie: "A",
-    jugados: 0,
-    ganados: 0,
-    empatados: 0,
-    perdidos: 0,
-    golesFavor: 0,
-    golesContra: 0,
-    diferencia: 0, 
-    puntos: 0
-  },
-  {
-    name: "Electras",
-    serie: "A",
-    jugados: 0,
-    ganados: 0,
-    empatados: 0,
-    perdidos: 0,
-    golesFavor: 0,
-    golesContra: 0,
-    diferencia: 0, 
-    puntos: 0
-  },
-  {
-    name: "La Estación",
-    serie: "A",
-    jugados: 0,
-    ganados: 0,
-    empatados: 0,
-    perdidos: 0,
-    golesFavor: 0,
-    golesContra: 0,
-    diferencia: 0, 
-    puntos: 0
-  },
-  {
-    name: "Bohemias",
-    serie: "B",
-    jugados: 0,
-    ganados: 0,
-    empatados: 0,
-    perdidos: 0,
-    golesFavor: 0,
-    golesContra: 0,
-    diferencia: 0, 
-    puntos: 0
-  },
-  {
-    name: "La Abasto",
-    serie: "B",
-    jugados: 0,
-    ganados: 0,
-    empatados: 0,
-    perdidos: 0,
-    golesFavor: 0,
-    golesContra: 0,
-    diferencia: 0, 
-    puntos: 0
-  },
-  {
-    name: "Las Piedras",
-    serie: "B",
-    jugados: 0,
-    ganados: 0,
-    empatados: 0,
-    perdidos: 0,
-    golesFavor: 0,
-    golesContra: 0,
-    diferencia: 0, 
-    puntos: 0
-  },
-  {
-    name: "La Ola",
-    serie: "B",
-    jugados: 0,
-    ganados: 0,
-    empatados: 0,
-    perdidos: 0,
-    golesFavor: 0,
-    golesContra: 0,
-    diferencia: 0, 
-    puntos: 0
-  }
-  ]
+  matchesInterior : any [] = [this.matches.flatMap(matchday=>
+    matchday.filter(game => 
+      !this.listaEquiposRocha.includes(game.equipoLocal)  && !this.listaEquiposRocha.includes(game.equipoVisitante))
+  )];
+  matchesRocha : any [] = [this.matches.flatMap(matchday=>
+    matchday.filter(game => 
+      this.listaEquiposRocha.includes(game.equipoLocal)  && this.listaEquiposRocha.includes(game.equipoVisitante))
+  )];
+
+
   equiposSerieA = this.equipos.filter(e => e.serie === 'A');
   equiposSerieB = this.equipos.filter(e => e.serie === 'B');
 
+
   ngOnInit() {
-    this.extractTeamInfo(); // Call the method during component initialization to retrieve matchdays data
+
+    this.extractTeamInfo(this.matches, this.equipos); // Call the method during component initialization to retrieve matchdays data
+    this.extractTeamInfo(this.matchesRocha, this.equiposRocha); // Call the method during component initialization to retrieve matchdays data
+    this.extractTeamInfo(this.matchesInterior, this.equiposInterior); // Call the method during component initialization to retrieve matchdays data
+    console.log(this.equipos);
+    console.log(this.equiposRocha);
+    console.log(this.equiposInterior);
+    // this.extractTeamInfo(this.matchesInterior); // Call the method during component initialization to retrieve matchdays data
     const sortTeamsByCriteria = (a: any, b: any) => { //Sort groups with matchday data to prompt on league table
       if (b.puntos !== a.puntos){
         return b.puntos - a.puntos // First criteria - POINTS
@@ -201,6 +338,9 @@ export class LeagueTableComponent {
     this.equiposSerieA.sort(sortTeamsByCriteria); 
     this.equiposSerieB.sort(sortTeamsByCriteria);
     this.equipos.sort(sortTeamsByCriteria);
+    this.equiposRocha.sort(sortTeamsByCriteria);
+    this.equiposInterior.sort(sortTeamsByCriteria);
+
   }
 
   get pages() {
@@ -217,8 +357,8 @@ export class LeagueTableComponent {
     }
   }
 
-  extractTeamInfo() { // Read matchdays and extract stats
-    for (const matchday of this.matches) {
+  extractTeamInfo(league: any, equipos: any[]): void { // Read matchdays and extract stats
+    for (const matchday of league) {
       for (const match of matchday) {
         if(match.golesLocal === "-"){ // Skip if game hasn't been played
           continue
@@ -232,27 +372,28 @@ export class LeagueTableComponent {
         const visitantePoints = visitanteGoals > localGoals ? 2 : visitanteGoals === localGoals ? 1 : 0;
 
         // Update the stats for the local team
-        const localTeamIndex = this.equipos.findIndex(team => team.name === localTeam);
+        const localTeamIndex = equipos.findIndex(team => team.name === localTeam);
         if (localTeamIndex !== -1) {
-          this.equipos[localTeamIndex].jugados++;
-          this.equipos[localTeamIndex].puntos+=localPoints;
-          this.equipos[localTeamIndex].golesFavor+=localGoals;
-          this.equipos[localTeamIndex].golesContra+=visitanteGoals;
-          localPoints===2?this.equipos[localTeamIndex].ganados++:localPoints===1?this.equipos[localTeamIndex].empatados++:this.equipos[localTeamIndex].perdidos++;
-          this.equipos[localTeamIndex].diferencia+=(localGoals-visitanteGoals);
+          equipos[localTeamIndex].jugados++;
+          equipos[localTeamIndex].puntos+=localPoints;
+          equipos[localTeamIndex].golesFavor+=localGoals;
+          equipos[localTeamIndex].golesContra+=visitanteGoals;
+          localPoints===2?equipos[localTeamIndex].ganados++:localPoints===1?equipos[localTeamIndex].empatados++:equipos[localTeamIndex].perdidos++;
+          equipos[localTeamIndex].diferencia+=(localGoals-visitanteGoals);
         }
 
         // Update the stats for the visiting team
-        const visitanteTeamIndex = this.equipos.findIndex(team => team.name === visitanteTeam);
+        const visitanteTeamIndex = equipos.findIndex(team => team.name === visitanteTeam);
         if (visitanteTeamIndex !== -1) {
-          this.equipos[visitanteTeamIndex].jugados++;
-          this.equipos[visitanteTeamIndex].puntos+=visitantePoints;
-          this.equipos[visitanteTeamIndex].golesFavor+=visitanteGoals;
-          this.equipos[visitanteTeamIndex].golesContra+=localGoals;
-          visitantePoints===2?this.equipos[visitanteTeamIndex].ganados++:visitantePoints===1?this.equipos[visitanteTeamIndex].empatados++:this.equipos[visitanteTeamIndex].perdidos++;
-          this.equipos[visitanteTeamIndex].diferencia+=(visitanteGoals-localGoals);
+          equipos[visitanteTeamIndex].jugados++;
+          equipos[visitanteTeamIndex].puntos+=visitantePoints;
+          equipos[visitanteTeamIndex].golesFavor+=visitanteGoals;
+          equipos[visitanteTeamIndex].golesContra+=localGoals;
+          visitantePoints===2?equipos[visitanteTeamIndex].ganados++:visitantePoints===1?equipos[visitanteTeamIndex].empatados++:equipos[visitanteTeamIndex].perdidos++;
+          equipos[visitanteTeamIndex].diferencia+=(visitanteGoals-localGoals);
         }
       }
+      // this.extractTeamInfo()
     }
   }
 }

@@ -27,7 +27,6 @@ export class CarouselComponent implements OnInit{
     window.addEventListener('scroll', () => {
       // document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
       if(window.scrollY>200){
-        console.log("h");
         document.querySelector('.carousel-container')?.classList.add("scale-in-hor-center");
       }
     }, false);
